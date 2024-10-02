@@ -42,7 +42,7 @@ export class Card {
             .attr('height', `${((height - 2 * strokeWidth) / height) * 100}%`)
             // 100% - 2px to show borderline
             .attr('width', `${((width - 2 * strokeWidth) / width) * 100}%`)
-            .attr('stroke', `${theme.stroke}`)
+            .attr('stroke', theme.stroke === '#1a1b27' ? '#ffffff' : `${theme.stroke}`)
             .attr('stroke-width', strokeWidth)
             .attr('fill', `${theme.background}`)
             .attr('stroke-opacity', `${theme.strokeOpacity}`);
